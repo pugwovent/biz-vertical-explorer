@@ -81,16 +81,52 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* About Section */}
+      {/* Amazon Connect Benefits Section */}
       <div className="bg-secondary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">About AnyBusiness Network</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              For over two decades, the AnyBusiness Network has been a trusted partner to communities across the United States. 
-              Our commitment to excellence, innovation, and customer satisfaction drives everything we do across our diverse 
-              portfolio of business verticals.
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Amazon Connect Business Benefits</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+              Transform your customer experience with AI-powered contact center capabilities that deliver measurable results across all business verticals.
             </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-4xl mb-4">💰</div>
+              <h3 className="text-xl font-semibold mb-2">Cost Reduction</h3>
+              <p className="text-muted-foreground">Up to 58% reduction in operational costs with cloud-based infrastructure and AI automation</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">🤖</div>
+              <h3 className="text-xl font-semibold mb-2">AI-Powered Self-Service</h3>
+              <p className="text-muted-foreground">Intelligent virtual agents handle routine inquiries, freeing up human agents for complex issues</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">📈</div>
+              <h3 className="text-xl font-semibold mb-2">Improved Efficiency</h3>
+              <p className="text-muted-foreground">Real-time insights and agent assistance boost first-call resolution rates by 25%</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="text-xl font-semibold mb-2">Rapid Deployment</h3>
+              <p className="text-muted-foreground">Deploy in as little as 90 days with no hardware requirements or long-term commitments</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">🎯</div>
+              <h3 className="text-xl font-semibold mb-2">Personalized Experience</h3>
+              <p className="text-muted-foreground">GenAI provides personalized responses and recommendations for every customer interaction</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">📊</div>
+              <h3 className="text-xl font-semibold mb-2">Data-Driven Insights</h3>
+              <p className="text-muted-foreground">Real-time analytics and sentiment analysis optimize operations and customer satisfaction</p>
+            </div>
           </div>
         </div>
       </div>
