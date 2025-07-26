@@ -11,6 +11,7 @@ const Navigation = () => {
     { path: "/retail", label: "Retail" },
     { path: "/home-services", label: "Home Services" },
     { path: "/higher-education", label: "Higher Education" },
+    { path: "/property-legal", label: "Property Legal" },
   ];
 
   return (
