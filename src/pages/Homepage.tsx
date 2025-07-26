@@ -35,6 +35,12 @@ const Homepage = () => {
       description: "Excellence in education and research innovation",
       path: "/higher-education",
       icon: "🎓"
+    },
+    {
+      name: "AnyBusiness Property Legal",
+      description: "Expert legal support for property transactions and conveyancing",
+      path: "/property-legal",
+      icon: "⚖️"
     }
   ];
 
