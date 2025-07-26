@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import BusinessHero from "@/components/BusinessHero";
+import FAQSection from "@/components/FAQSection";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-business.jpg";
@@ -25,6 +26,41 @@ const HomeServices = () => {
       title: "Home Renovation",
       description: "Complete home improvement and remodeling services",
       features: ["Kitchen Remodeling", "Bathroom Renovation", "Flooring Installation", "Painting Services"]
+    }
+  ];
+
+  const homeServicesFAQs = [
+    {
+      question: "Do you offer emergency services?",
+      answer: "Yes, we provide 24/7 emergency services for plumbing, electrical, and HVAC issues. Emergency service fees apply for after-hours calls."
+    },
+    {
+      question: "Are your technicians licensed and insured?",
+      answer: "All our technicians are fully licensed, bonded, and insured. We carry comprehensive liability insurance to protect your property."
+    },
+    {
+      question: "Do you provide free estimates?",
+      answer: "Yes, we offer free estimates for all non-emergency work. Emergency service calls have a diagnostic fee that is applied toward the repair cost."
+    },
+    {
+      question: "What payment methods do you accept?",
+      answer: "We accept cash, checks, and all major credit cards. We also offer financing options for larger projects over $1,000."
+    },
+    {
+      question: "Do you guarantee your work?",
+      answer: "Yes, we provide a comprehensive warranty on all our work. Labor warranties range from 1-3 years depending on the service, and we honor all manufacturer warranties on parts."
+    },
+    {
+      question: "How far in advance do I need to schedule service?",
+      answer: "For routine maintenance and non-urgent repairs, we typically schedule within 2-3 business days. Same-day service is available for urgent issues."
+    },
+    {
+      question: "Can you work on weekends?",
+      answer: "Yes, we offer weekend services for both routine and emergency calls. Weekend rates may apply for non-emergency services."
+    },
+    {
+      question: "Do you clean up after completing work?",
+      answer: "Absolutely. We clean up all debris and materials from our work area and leave your home as clean as we found it, if not cleaner."
     }
   ];
 
@@ -154,6 +190,9 @@ const HomeServices = () => {
           </div>
         </div>
       </div>
+
+      {/* FAQ Section */}
+      <FAQSection title="Home Services FAQs" faqs={homeServicesFAQs} />
     </div>
   );
 };

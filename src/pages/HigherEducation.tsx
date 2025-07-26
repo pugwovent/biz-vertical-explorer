@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import BusinessHero from "@/components/BusinessHero";
+import FAQSection from "@/components/FAQSection";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-business.jpg";
@@ -25,6 +26,41 @@ const HigherEducation = () => {
       title: "Professional Development",
       description: "Continuing education and certification programs",
       features: ["Executive Education", "Professional Certificates", "Online Learning", "Corporate Training"]
+    }
+  ];
+
+  const educationFAQs = [
+    {
+      question: "What are the admission requirements?",
+      answer: "Admission requirements vary by program. Undergraduate programs typically require a high school diploma, SAT/ACT scores, and transcripts. Graduate programs require a bachelor's degree, GRE/GMAT scores, and letters of recommendation."
+    },
+    {
+      question: "Do you offer online degree programs?",
+      answer: "Yes, we offer fully online degree programs in Business Administration, Computer Science, and several other fields. Online students have access to the same resources as on-campus students."
+    },
+    {
+      question: "What financial aid options are available?",
+      answer: "We offer various financial aid options including federal grants, student loans, work-study programs, merit-based scholarships, and need-based aid. Our financial aid office can help determine your eligibility."
+    },
+    {
+      question: "What is the student-to-faculty ratio?",
+      answer: "Our student-to-faculty ratio is 15:1, ensuring small class sizes and personalized attention from professors. Most classes have fewer than 25 students."
+    },
+    {
+      question: "Do you offer campus housing?",
+      answer: "Yes, we offer on-campus housing in modern residence halls and apartment-style accommodations. Housing is guaranteed for all first-year students and available to upperclassmen based on availability."
+    },
+    {
+      question: "What career services do you provide?",
+      answer: "Our career services include job placement assistance, resume writing workshops, interview preparation, career fairs, internship placement, and lifetime career counseling for alumni."
+    },
+    {
+      question: "Can I transfer credits from another institution?",
+      answer: "Yes, we accept transfer credits from accredited institutions. Our admissions office will evaluate your transcripts and determine which credits can be applied toward your degree."
+    },
+    {
+      question: "What is your graduation rate?",
+      answer: "Our four-year graduation rate is 78%, and our six-year graduation rate is 92%. We provide extensive academic support services to help students succeed and graduate on time."
     }
   ];
 
@@ -228,6 +264,9 @@ const HigherEducation = () => {
           </div>
         </div>
       </div>
+
+      {/* FAQ Section */}
+      <FAQSection title="Higher Education FAQs" faqs={educationFAQs} />
     </div>
   );
 };

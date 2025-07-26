@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import BusinessHero from "@/components/BusinessHero";
+import FAQSection from "@/components/FAQSection";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-business.jpg";
@@ -20,6 +21,41 @@ const Healthcare = () => {
       title: "Emergency Services",
       description: "24/7 emergency care and urgent medical services",
       features: ["Emergency Room", "Urgent Care", "Trauma Center", "Ambulance Services"]
+    }
+  ];
+
+  const healthcareFAQs = [
+    {
+      question: "What are your office hours?",
+      answer: "Our main clinic is open Monday through Friday from 7:00 AM to 7:00 PM, and Saturday from 8:00 AM to 4:00 PM. Our emergency department is available 24/7."
+    },
+    {
+      question: "Do you accept my insurance?",
+      answer: "We accept most major insurance plans including Medicare, Medicaid, Blue Cross Blue Shield, Aetna, Cigna, and UnitedHealthcare. Please call our billing department at (555) 123-BILL to verify your specific coverage."
+    },
+    {
+      question: "How do I schedule an appointment?",
+      answer: "You can schedule an appointment by calling (555) 123-HEAL, using our online patient portal, or visiting our clinic in person. For urgent matters, we offer same-day appointments."
+    },
+    {
+      question: "What should I bring to my first appointment?",
+      answer: "Please bring a valid photo ID, your insurance card, a list of current medications, and any relevant medical records from previous healthcare providers."
+    },
+    {
+      question: "Do you offer telemedicine services?",
+      answer: "Yes, we offer virtual consultations for routine follow-ups, prescription refills, and non-emergency medical concerns. Contact us to schedule a telehealth appointment."
+    },
+    {
+      question: "What emergency services do you provide?",
+      answer: "Our emergency department provides 24/7 care for serious injuries, chest pain, difficulty breathing, severe bleeding, and other life-threatening conditions. For true emergencies, call 911."
+    },
+    {
+      question: "Do you have specialists on staff?",
+      answer: "Yes, we have specialists in cardiology, orthopedics, dermatology, mental health, pediatrics, and women's health. Specialist appointments typically require a referral from your primary care physician."
+    },
+    {
+      question: "What preventive care services do you offer?",
+      answer: "We provide annual physical exams, vaccinations, cancer screenings, blood pressure monitoring, cholesterol testing, diabetes screening, and other preventive health services."
     }
   ];
 
@@ -118,6 +154,9 @@ const Healthcare = () => {
           </div>
         </div>
       </div>
+
+      {/* FAQ Section */}
+      <FAQSection title="Healthcare FAQs" faqs={healthcareFAQs} />
     </div>
   );
 };

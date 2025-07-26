@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import BusinessHero from "@/components/BusinessHero";
+import FAQSection from "@/components/FAQSection";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-business.jpg";
@@ -20,6 +21,41 @@ const Accommodation = () => {
       title: "Event Spaces",
       description: "Elegant venues for weddings, conferences, and special events",
       features: ["Grand Ballroom", "Meeting Rooms", "Garden Terrace", "Audio/Visual Equipment"]
+    }
+  ];
+
+  const accommodationFAQs = [
+    {
+      question: "What are your check-in and check-out times?",
+      answer: "Check-in time is 3:00 PM and check-out is 11:00 AM. Early check-in and late check-out may be available upon request and subject to availability."
+    },
+    {
+      question: "Do you offer airport transportation?",
+      answer: "Yes, we provide complimentary shuttle service to and from the airport. Please contact our concierge at least 24 hours in advance to arrange transportation."
+    },
+    {
+      question: "What dining options are available?",
+      answer: "Our award-winning restaurant serves breakfast, lunch, and dinner with farm-to-table cuisine. We also offer 24-hour room service and a lobby café for light meals and beverages."
+    },
+    {
+      question: "Do you have facilities for business meetings and events?",
+      answer: "Yes, we have a grand ballroom accommodating up to 300 guests, three smaller meeting rooms, and a garden terrace. All spaces include modern audio/visual equipment and catering services."
+    },
+    {
+      question: "What amenities are included with my stay?",
+      answer: "All rooms include complimentary Wi-Fi, fitness center access, pool and spa access, 24-hour concierge service, and daily housekeeping. Premium suites include additional amenities."
+    },
+    {
+      question: "Do you allow pets?",
+      answer: "Yes, we are a pet-friendly hotel. We welcome dogs and cats under 50 pounds with a one-time pet fee of $75. Please inform us of your pet when making your reservation."
+    },
+    {
+      question: "What is your cancellation policy?",
+      answer: "Standard reservations can be cancelled up to 24 hours before arrival without penalty. Special event and holiday bookings may have different cancellation terms."
+    },
+    {
+      question: "Do you offer wedding packages?",
+      answer: "Yes, we offer comprehensive wedding packages including ceremony and reception venues, catering, floral arrangements, photography, and honeymoon suite accommodations. Contact our events team for details."
     }
   ];
 
@@ -122,6 +158,9 @@ const Accommodation = () => {
           </div>
         </div>
       </div>
+
+      {/* FAQ Section */}
+      <FAQSection title="Accommodation FAQs" faqs={accommodationFAQs} />
     </div>
   );
 };
