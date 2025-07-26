@@ -49,9 +49,9 @@ const Homepage = () => {
       >
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white max-w-4xl px-4">
-            <h1 className="text-5xl font-bold mb-4">AnyBusiness Network</h1>
-            <p className="text-xl mb-6">Connecting Communities Through Quality Business Services</p>
-            <p className="text-lg opacity-90">Discover our family of businesses serving diverse industries across America</p>
+            <h1 className="text-5xl font-bold mb-4">Amazon Connect Demo</h1>
+            <p className="text-xl mb-6">AI-Powered Contact Center Self-Service Experience</p>
+            <p className="text-lg opacity-90">Experience how Amazon Connect transforms customer interactions with GenAI capabilities across diverse business verticals</p>
           </div>
         </div>
       </div>
